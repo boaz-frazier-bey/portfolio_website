@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Megrim', cursive;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
   line-height: 1.5;
 }
 
@@ -87,10 +88,10 @@ main {
   .bio-image {
     grid-area: bio-image;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 10px;
     width: 250px;
     height: 250px;
-    border: $secondary-color 3px solid;
+    border: $secondary-color 2px solid;
   }
   
   .bio {

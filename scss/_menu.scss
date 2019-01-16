@@ -13,6 +13,7 @@
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
     @include easeOut;
+
   }
 
   // Rotate Into X With Menu Lines
@@ -43,7 +44,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  // opacity: 0.9;
+  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -65,7 +66,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: #51ffff;
     list-style: none;
     transform: translate3d(100%, 0, 0);
     @include easeOut;
@@ -78,7 +79,7 @@
 
   // Branding Side
   &-branding {
-    background: $primary-color;
+    background: black;
     transform: translate3d(-100%, 0, 0);
     @include easeOut;
 
@@ -88,12 +89,12 @@
     }
 
     .portrait {
-      width: 250px;
+      width: 100%;
       height: 250px;
-      background: url('../img/boazpic.jpg');
-      background-size: 247px;
-      border-radius: 50%;
-      border: solid 3px $secondary-color;
+      background: url('../img/boazlogo.jpg');
+      background-size: 500px;
+      margin-left: 200px;
+     
     }
   }
 
@@ -107,7 +108,7 @@
     }
 
     &.current > a {
-      color: $secondary-color;
+      color: lightgray;
     }
   }
 
@@ -118,12 +119,14 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: set-text-color($primary-color);
+    color: black;
     text-decoration: none;
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      color: #fff;
+      font-weight: bold;
+      font-size: 30px;
     }
   }
 }
