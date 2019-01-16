@@ -24,6 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -39,32 +40,31 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #51ffff;
     list-style: none;
     transform: translate3d(100%, 0, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: black;
     transform: translate3d(-100%, 0, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
+      width: 100%;
       height: 250px;
-      background: url("../img/boazpic.jpg");
-      background-size: 247px;
-      border-radius: 50%;
-      border: solid 3px #eece1a; }
+      background: url("../img/boazlogo.jpg");
+      background-size: 500px;
+      margin-left: 200px; }
   .menu .nav-item {
     transform: translate3d(0, 600px, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: lightgray; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -72,11 +72,13 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: black;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #fff;
+      font-weight: bold;
+      font-size: 30px; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -91,14 +93,14 @@
   transition-delay: 0.4s; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Megrim', cursive; }
 
 body {
   background: #444;
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -140,7 +142,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #51ffff; }
 
 main {
   padding: 4rem;
@@ -151,7 +153,7 @@ main {
       padding: 0.4rem;
       color: #fff; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #51ffff;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -166,10 +168,10 @@ main {
   .about-info .bio-image {
     grid-area: bio-image;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 10px;
     width: 250px;
     height: 250px;
-    border: #eece1a 3px solid; }
+    border: #51ffff 2px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -182,7 +184,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #51ffff 5px solid; }
 
 .projects {
   display: grid;
@@ -193,7 +195,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #51ffff;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -210,7 +212,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #51ffff;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -221,7 +223,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #51ffff;
     color: #000; }
 
 .btn-dark {
