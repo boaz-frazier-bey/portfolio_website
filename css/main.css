@@ -287,6 +287,8 @@ main {
 @media screen and (max-width: 500px) {
   .title-branding h1 {
     font-size: 3.5rem; }
+  .menu-nav {
+    justify-content: start; }
   main#home h1 {
     margin-top: 10vh;
     font-size: 4rem; }
