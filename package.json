@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio Website",
   "main": "index.js",
-  "homepage": "http://boaz-frazier-bey.github.io/portfolio_website",
+  "homepage": "http://boaz-frazier-bey.github.io/portfolio_website/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"

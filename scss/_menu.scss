@@ -13,13 +13,12 @@
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
     @include easeOut;
-
+    
   }
 
   // Rotate Into X With Menu Lines
   &.close {
     transform: rotate(180deg);
-
     .btn-line {
       // Line 1 - Rotate
       &:nth-child(1) {
@@ -44,7 +43,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -61,6 +59,16 @@
     width: 50%;
     height: 100vh;
     overflow: hidden;
+
+    i {
+
+      padding-left: 6px;
+
+      &:hover {
+        text-shadow: 2.5px 2.5px black;
+
+      }
+    }
   }
 
   &-nav {
