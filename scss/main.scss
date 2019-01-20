@@ -35,6 +35,11 @@ h3 {
   }
 }
 
+.resume {
+  color: $secondary-color;
+  font-size: 40px;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -114,7 +119,8 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border: $secondary-color 1px solid;
+    border-radius: 10px;
   }
 }
 
