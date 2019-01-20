@@ -137,6 +137,10 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(74, 74, 74, 0.5); }
 
+.resume {
+  color: #51ffff;
+  font-size: 40px; }
+
 a {
   color: #fff;
   text-decoration: none; }
@@ -189,7 +193,8 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #51ffff 5px solid; }
+    border: #51ffff 1px solid;
+    border-radius: 10px; }
 
 .projects {
   display: grid;
